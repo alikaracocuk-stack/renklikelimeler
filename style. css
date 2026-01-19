@@ -1,15 +1,12 @@
-html {
-  scroll-behavior: smooth;
-}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fdfdfd;
+  background: #f9fafb;
   color: #333;
 }
 
 header {
-  background: linear-gradient(135deg, #a1ffce, #faffd1);
+  background: linear-gradient(135deg, #9ae6b4, #fefcbf);
   text-align: center;
   padding: 60px 20px;
 }
@@ -32,26 +29,30 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #333;
   font-weight: bold;
+  color: #2d3748;
 }
 
 section {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 60px auto;
   padding: 0 20px;
 }
 
-section h2 {
+h2 {
   color: #2c7a7b;
+}
+
+.yas-filtre {
+  margin-bottom: 20px;
 }
 
 button {
   background: #38b2ac;
-  color: white;
+  color: #fff;
   border: none;
-  padding: 12px 20px;
-  font-size: 1rem;
+  padding: 10px 16px;
+  margin-right: 8px;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -60,15 +61,29 @@ button:hover {
   background: #2c7a7b;
 }
 
+.hikaye {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
 footer {
   text-align: center;
   padding: 30px;
-  font-size: 0.9rem;
   color: #666;
   border-top: 1px solid #ddd;
 }
 
 /* Mobil */
 @media (max-width: 600px) {
-  hea
+  nav {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
 
