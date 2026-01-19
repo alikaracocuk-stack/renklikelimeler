@@ -4,66 +4,46 @@
   <meta charset="UTF-8">
   <title>Renkli Kelimeler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fafafa;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #ffecd2, #fcb69f);
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin: 0;
-      color: #444;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #666;
-      margin-top: 8px;
-    }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    section h2 {
-      font-size: 1.8rem;
-      color: #555;
-      margin-bottom: 10px;
-    }
-    section p {
-      margin-bottom: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #777;
-      font-size: 0.9rem;
-      border-top: 1px solid #ddd;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>Renkli Kelimeler</h1>
-  <p>Çocuklar ve içindeki çocuğu yaşatan herkes için bir hikâye dünyası.</p>
+  <p>Hayallerden doğan hikâyeler</p>
 </header>
 
-<section>
-  <h2>🌟 Nedir?</h2>
-  <p>Renkli Kelimeler, hayallerini güvenli ve edebi hikâyelere dönüştüren bir platformdur. Okuyucu hayal eder, kahramanı ve konuyu seçer; Renkli Kelimeler bunu yaşa uygun bir öyküye çevirir.</p>
+<nav>
+  <a href="#cocuk">Çocuk</a>
+  <a href="#genc">Genç</a>
+  <a href="#yetiskin">Yetişkin</a>
+  <a href="#okuyucu">Okuyucu Hayalleri</a>
+</nav>
+
+<section id="cocuk">
+  <h2>🧸 Çocuk Hikâyeleri</h2>
+  <p>3–12 yaş arası için güvenli ve eğitici masallar.</p>
 </section>
 
-<section>
-  <h2>👶 Kimler İçin?</h2>
-  <p>Çocuklar, gençler ve hayal kurmayı seven herkes için özel içerikler sunar.</p>
+<section id="genc">
+  <h2>📘 Gençlik Hikâyeleri</h2>
+  <p>Hayaller, dostluklar ve maceralar.</p>
+</section>
+
+<section id="yetiskin">
+  <h2>📖 Yetişkin Hikâyeleri</h2>
+  <p>Daha derin, edebi anlatılar.</p>
+</section>
+
+<section id="okuyucu">
+  <h2>✨ Sen Hayal Et</h2>
+  <p>
+    Hikâye konusunu, kahramanı ve yaş grubunu yaz.<br>
+    Biz senin hayalini hikâyeye dönüştürelim.
+  </p>
+  <button onclick="alert('Bu özellik yakında aktif!')">
+    Hayal Gönder
+  </button>
 </section>
 
 <footer>
@@ -72,3 +52,4 @@
 
 </body>
 </html>
+
