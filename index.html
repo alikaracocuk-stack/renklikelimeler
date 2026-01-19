@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <title>Renkli Kelimeler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- Smooth scroll (CSS bozulsa bile çalışır) -->
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 
@@ -17,9 +18,87 @@
 
 <header>
   <h1>Renkli Kelimeler</h1>
-  <p>Hayallerden doğan hikâyeler</p>
+  <p>Çocuklar ve hayal kurmayı unutmayanlar için</p>
 </header>
 
 <nav>
   <a href="#anasayfa">Ana Sayfa</a>
-  <a href="#cocuk">
+  <a href="#cocuk">Çocuklar</a>
+  <a href="#hikayeler">Hikâyeler</a>
+  <a href="#okuyucu">Okuyucu Hayalleri</a>
+</nav>
+
+<section id="anasayfa">
+  <h2>Hoş Geldin</h2>
+  <p>
+    Renkli Kelimeler; çocukların, gençlerin ve yetişkinlerin
+    hayal gücünü yazıya dönüştüren bir hikâye kutusudur.
+  </p>
+</section>
+
+<section id="cocuk">
+  <h2>Çocuklar İçin Hikâyeler</h2>
+
+  <div class="yas-filtre">
+    <button onclick="filtrele('3')">3+</button>
+    <button onclick="filtrele('6')">6+</button>
+    <button onclick="filtrele('9')">9+</button>
+    <button onclick="filtrele('hepsi')">Hepsi</button>
+  </div>
+
+  <div class="hikaye" data-yas="3">
+    <h3>🐻 Uçan Ayıcık</h3>
+    <p>3 yaş ve üzeri için kısa, güvenli bir masal.</p>
+  </div>
+
+  <div class="hikaye" data-yas="6">
+    <h3>🚀 Uzayda Kaybolan Kedi</h3>
+    <p>6 yaş ve üzeri çocuklar için macera.</p>
+  </div>
+
+  <div class="hikaye" data-yas="9">
+    <h3>🗺️ Gizli Orman</h3>
+    <p>9 yaş ve üzeri için hayal gücü yüksek bir hikâye.</p>
+  </div>
+</section>
+
+<section id="hikayeler">
+  <h2>Hikâyeler</h2>
+  <p>
+    Masallar, öyküler ve hayal dolu metinler bu bölümde yer alır.
+  </p>
+
+  <button onclick="alert('PDF sistemi bir sonraki adımda aktif olacak')">
+    PDF Olarak İste
+  </button>
+</section>
+
+<section id="okuyucu">
+  <h2>Okuyucu Hayalleri</h2>
+  <p>
+    Kahramanları sen seç, konuyu sen ver.
+    Biz senin hayalini hikâyeye dönüştürelim.
+  </p>
+
+  <p><strong>Yakında:</strong> Hayal gönderme formu</p>
+</section>
+
+<footer>
+  © 2026 Renkli Kelimeler — Tüm hakları saklıdır.
+</footer>
+
+<script>
+  function filtrele(yas) {
+    const hikayeler = document.querySelectorAll('.hikaye');
+    hikayeler.forEach(h => {
+      if (yas === 'hepsi' || h.dataset.yas === yas) {
+        h.style.display = 'block';
+      } else {
+        h.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
