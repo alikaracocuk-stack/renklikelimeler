@@ -39,38 +39,9 @@ section {
   padding: 0 20px;
 }
 
-section h2 {
-  color: #2c7a7b;
-}
-
-button {
-  background: #38b2ac;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #2c7a7b;
-}
-
 footer {
   text-align: center;
   padding: 30px;
   font-size: 0.9rem;
   color: #666;
-  border-top: 1px solid #ddd;
-}
-
-/* Mobil */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  nav {
-    flex-direction: column;
-  }
 }
