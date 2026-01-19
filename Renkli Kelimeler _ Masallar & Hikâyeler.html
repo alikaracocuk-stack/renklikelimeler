@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/PC/Downloads/hikaye_paylasim_sitesi%20(2).html -->
+<html lang="tr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renkli Kelimeler | Masallar &amp; Hikâyeler</title>
+  <link href="./Renkli Kelimeler _ Masallar &amp; Hikâyeler_files/css2" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Source Serif 4', serif;
+      background: #faf9f7;
+      color: #2b2b2b;
+      user-select: none; /* kopyalamayı zorlaştırır */
+    }
+    header {
+      padding: 90px 20px 70px;
+      text-align: center;
+      background: linear-gradient(to bottom, #111, #222);
+      color: #f5f5f5;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      color: #cfcfcf;
+      font-style: italic;
+    }
+    main {
+      max-width: 760px;
+      margin: 90px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 120px;
+    }
+    article h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .date {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 25px;
+    }
+    p {
+      line-height: 1.9;
+      font-size: 1.08rem;
+      margin-bottom: 18px;
+      text-align: justify;
+    }
+    .box {
+      background: #f1f1f1;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      border-top: 1px solid #ddd;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    button {
+      padding: 12px 22px;
+      border-radius: 20px;
+      border: none;
+      background: #222;
+      color: #fff;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Renkli Kelimeler</h1>
+    <p><strong>Tanım:</strong> Renkli Kelimeler; çocukların ve içindeki çocuğu yaşatan herkesin hayallerini güvenli, sade ve edebi metinlere dönüştüren katılımcı bir hikâye platformudur. Okuyucu hayal eder, kahramanı ve yönü seçer; Renkli Kelimeler bu hayali yaşa uygun bir masal ya da hikâyeye dönüştürür.</p>
+
+    <!-- YAŞ SEÇİMİ -->
+    <div style="margin-top:40px;">
+      <p style="font-size:0.95rem; color:#ddd;">Okuyucu yaşı:</p>
+      <button onclick="filterAge(&#39;3+&#39;)">3+</button>
+      <button onclick="filterAge(&#39;6+&#39;)">6+</button>
+      <button onclick="filterAge(&#39;9+&#39;)">9+</button>
+      <button onclick="filterAge(&#39;adult&#39;)">Büyükler</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ÇOCUK BÖLÜMÜ -->
+    <section class="kids" data-age="6+" style="display: block;">
+      <article>
+        <h2>🧸 Çocuklar İçin Masallar</h2>
+        <div class="date">6+ yaş</div>
+        <p>
+          Bu bölüm çocuklar için yazılmış güvenli, hayal gücünü destekleyen masallardan oluşur.
+        </p>
+      </article>
+    </section>
+
+    <!-- HİKÂYELER -->
+    <section class="adult" data-age="adult" style="display: none;">
+      <article>
+        <h2>🌙 Hikâyeler</h2>
+        <div class="date">Büyükler için</div>
+        <p>
+          Daha derin, edebi ve duygusal hikâyeler.
+        </p>
+      </article>
+    </section>
+
+    <!-- DENEMELER -->
+    <section class="adult" data-age="adult" style="display: none;">
+      <article>
+        <h2>✍️ Denemeler &amp; Yazılar</h2>
+        <div class="date">Büyükler için</div>
+        <p>
+          Yazmak, hayat, çocukluk ve hayaller üzerine kısa denemeler.
+        </p>
+      </article>
+    </section>
+
+    <!-- OKUYUCU KATILIMI -->
+    <section>
+      <article>
+        <h2>💌 Okuyucu Hayalleri</h2>
+        <div class="date">Sen hayal et, biz yazalım</div>
+        <p>
+          Okuyucular hikâye konusu, kahramanlar veya hayal ettikleri dünyayı paylaşır.
+          Seçilen hayaller Renkli Kelimeler tarafından hikâyeye dönüştürülür.
+        </p>
+
+        <div class="box">
+          <p><strong>Hayalini gönder:</strong></p>
+          <p>📧 hayalkutusu@gmail.com</p>
+          <p style="font-size:0.9rem; color:#555;">
+            Gönderilen içerikler düzenlenerek yazıya dönüştürülür. Yayınlanan metinlerin tüm hakları Renkli Kelimeler’na aittir.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ÜCRETLİ ÇIKTI -->
+    <section>
+      <article>
+        <h2>🖨️ Masal &amp; Hikâye PDF'leri</h2>
+        <div class="date">Yarı otomatik sistem</div>
+        <p>
+          PDF'ler yarı otomatik sistemle hazırlanır:
+        </p>
+        <ol>
+          <li>Okuyucu hikâyeyi seçer</li>
+          <li>Ödeme yapar</li>
+          <li>PDF kişiye özel hazırlanır</li>
+          <li>Mail ile gönderilir</li>
+        </ol>
+        <p style="font-size:0.9rem; color:#555;">
+          PDF'ler isimli, kişisel kullanıma özeldir. Paylaşım ve çoğaltma yasaktır.
+        </p>
+        <button>PDF Talep Et</button>
+      </article>
+    </section>
+
+      <section class="pdf">
+      <h2>📘 PDF Tasarım Şablonu</h2>
+      <p>Renkli Kelimeler PDF'leri kitap düzeninde, sade ve çocuk dostu bir tasarımla hazırlanır.</p>
+
+      <h3>🟦 Kapak Tasarımı</h3>
+      <ul>
+        <li>Büyük başlık: Hikâye adı</li>
+        <li>Alt başlık: Renkli Kelimeler</li>
+        <li>Yaş etiketi: (3+ / 6+ / 9+ / Büyükler)</li>
+        <li>Yazar mahlası</li>
+        <li>Yumuşak pastel arka plan</li>
+      </ul>
+
+      <h3>📄 İç Sayfa Düzeni</h3>
+      <ul>
+        <li>Tek sütun</li>
+        <li>Geniş satır aralığı</li>
+        <li>Okunabilir serif yazı tipi</li>
+        <li>Sayfa altı: Renkli Kelimeler</li>
+      </ul>
+
+      <h3>🔒 Güvenlik</h3>
+      <ul>
+        <li>Okuyucu adı PDF içine gömülür</li>
+        <li>"Kişisel kullanım içindir" ibaresi</li>
+        <li>Paylaşım yasak uyarısı</li>
+      </ul>
+
+      <p style="font-size:0.9rem; color:#555;">Her PDF yaş grubuna göre özel font ve boşluklarla üretilir.</p>
+    </section>
+      <section class="cover">
+      <h2>🎨 PDF Kapak Örneği (Tasarım Rehberi)</h2>
+      <p><strong>Stil:</strong> Sade, masalsı, güven veren.</p>
+      <ul>
+        <li>Arka plan: Pastel gradyan (mavi–yeşil / lavanta)</li>
+        <li>Başlık: Büyük punto, yuvarlak serif</li>
+        <li>Alt başlık: Renkli Kelimeler</li>
+        <li>Yaş etiketi rozeti</li>
+        <li>Alt kısım: Mahlas</li>
+      </ul>
+    </section>
+
+    <section class="penname">
+      <h2>✒️ Çocuklara Hitap Eden Mahlaslar</h2>
+      <ul>
+        <li>Masalcı Poyraz</li>
+        <li>Hayalci Duru</li>
+        <li>Kutu’nun Yazarı</li>
+        <li>Uçan Kalem</li>
+        <li>Mavi Defter</li>
+        <li>Masalcı Kedi</li>
+        <li>Rüya Toplayıcısı</li>
+      </ul>
+    </section>
+
+    <section class="manifesto">
+      <h2>📦 Renkli Kelimeler Nedir?</h2>
+      <p>
+        Renkli Kelimeler; çocukların, gençlerin ve içindeki çocuğu unutmayan herkesin
+        hayallerini kelimelere dönüştüren bir hikâye dünyasıdır.
+      </p>
+
+      <p>
+        Burada hikâyeler sadece okunmaz. <strong>Birlikte kurulur.</strong>
+        Okuyucu hayal eder, kahramanı seçer, yönü belirler;
+        Renkli Kelimeler o hayali edebi bir hikâyeye dönüştürür.
+      </p>
+
+      <p>
+        Renkli Kelimeler’nda her yaşın ayrı bir dili vardır.
+        Çocuklar için güvenli, sade ve umut dolu;
+        büyükler için derin, sakin ve düşündürücü metinler yazılır.
+      </p>
+
+      <p>
+        Bu site hızlı tüketilen içerikler üretmez.
+        Her hikâye özenle yazılır, kişiye özel hazırlanır
+        ve kitap düzeninde sunulur.
+      </p>
+
+      <p>
+        Renkli Kelimeler, hayal kurmanın hâlâ değerli olduğuna inananlar içindir.
+      </p>
+
+      <p style="margin-top:30px; font-style:italic;">
+        Bir hayalin varsa,
+        Renkli Kelimeler açıktır.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 • Renkli Kelimeler • Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    // Sağ tık ve kopyalama engelleme
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('copy', e => e.preventDefault());
+  </script>
+
+  <script>
+    // YAŞ FİLTRESİ – TAM ÇALIŞIR
+    function filterAge(age) {
+      const all = document.querySelectorAll('[data-age]');
+      all.forEach(el => el.style.display = 'none');
+
+      if (age === 'adult') {
+        document.querySelectorAll('[data-age="adult"]').forEach(el => el.style.display = 'block');
+      } else {
+        document.querySelectorAll('[data-age="'+age+'"]').forEach(el => el.style.display = 'block');
+      }
+    }
+
+    // Varsayılan: Büyükler gizli, çocuklar görünür
+    document.addEventListener('DOMContentLoaded', () => {
+      filterAge('6+');
+    });
+  </script>
+
+
+</body></html>
